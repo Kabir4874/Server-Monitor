@@ -1,3 +1,4 @@
+import swc from 'unplugin-swc';
 import { defineConfig } from 'vitest/config';
 
 export default defineConfig({
@@ -6,6 +7,7 @@ export default defineConfig({
     environment: 'node',
     root: './',
     include: ['src/**/*.spec.ts'],
+    setupFiles: ['./test/vitest.setup.ts'],
     coverage: {
       provider: 'v8',
       reporter: ['text', 'json', 'html'],
@@ -14,4 +16,5 @@ export default defineConfig({
       exclude: ['src/main.ts', 'src/**/*.module.ts'],
     },
   },
+  plugins: [swc.vite()],
 });

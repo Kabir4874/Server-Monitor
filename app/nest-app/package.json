@@ -23,12 +23,16 @@
     "@nestjs/core": "^11.0.1",
     "@nestjs/mapped-types": "*",
     "@nestjs/platform-express": "^11.0.1",
+    "@nestjs/swagger": "^11.4.6",
     "@nestjs/typeorm": "^11.0.3",
     "@types/better-sqlite3": "^7.6.13",
     "better-sqlite3": "^13.0.1",
+    "class-transformer": "^0.5.1",
+    "class-validator": "^0.15.1",
     "reflect-metadata": "^0.2.2",
     "rxjs": "^7.8.1",
-    "typeorm": "^1.1.0"
+    "typeorm": "^1.1.0",
+    "vitest-mock-extended": "^5.1.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3.2.0",
@@ -51,6 +55,7 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.20.0",
+    "unplugin-swc": "^1.5.9",
     "vitest": "^4.1.10"
   }
 }
